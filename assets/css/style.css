@@ -83,6 +83,7 @@
     width: 500px;
     transition: all 2s;
 }
+
 .ex-8-img:hover {
     border-radius: 20px;
     filter: sepia(0.7);
@@ -124,13 +125,16 @@
 .ex-11-icon {
     font-size: 60px;
 }
+
 .ex-11-icon:hover {
-    animation: rotazione-lenta 2s;
+    animation: rotazione-lenta 3s;
 }
+
 @keyframes rotazione-lenta {
     0% {
         transform: rotate(0deg);
     }
+
     50% {
         transform: rotate(300deg);
     }
@@ -154,6 +158,25 @@
     text-align: center;
     text-decoration: none;
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: movimento 2s linear;
+}
+
+@keyframes movimento{
+    0% {
+        left:10%;
+    }
+    50% {
+        left:70%;
+    }
+    100% {
+        left:10%;
+    }
+}
+
+
+
 
 .ex-12-top-white,
 .ex-13-top-white {
